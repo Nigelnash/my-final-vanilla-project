@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My final vanilla weather project</title>
+    <link  rel= "stylesheet" href="src/styles.css">
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="weather-app">
+        <header>
+            <form id="search-form">
+                <input id="search-input" class="search-input" type="search" placeholder="Enter a city..." required="">
+                <input class ="search-button" type="submit" value="search">
+            </form>
+        </header>
+    </div>
+    <main>
+        <div class="current-weather">
+            <div>
+                <h1 id="current-city" class="current-city">Tzaneen</h1>
+                <p class="current-details">
+                    <span id="current-date">Thursday 20:41,</span>
+                    <span id="current-condition">Rainy night</span>
+                    <br>
+                    Humidity:
+                    <strong id="humidity">80%</strong>
+                    wind:
+                    <strong id="wind-speed">5.5km/h</strong>
+                </p>
+            </div>
+        </div>
+        <div class="current-temperature">
+            <span id="icon" class="current-temperature-value">19</span>
+            <span class="current-temperature-unit">℃</span>
+        </div>
+        <div id="forecast-container" class="weather-forecast">
+        </div>
+        <div class="day-container">
+            <div class="forecast-day">Thurs</div>
+            <div>
+                <img class="forecast-icon" src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/shower-rain-day.png">
+            </div>
+            <div class="forecast-temp">
+                <span class="max-temp">
+                    <strong>23°</strong>
+                </span>
+                <span class="mini-temp">13°</span>
+            </div><div class="day-container">
+                <div class="forecast-day">Fri</div>
+                <div>
+                    <img class="forecast-icon" src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/shower-rain-day.png">
+                </div>
+                <div class="forecast-temp">
+                    <span class="max-temp">
+                        <strong>24°</strong>
+                    </span>
+                    <span class="mini-temp">16°</span>
+                </div><div class="day-container">
+                    <div class="forecast-day">Sat</div>
+                    <div>
+                        <img class="forecast-icon" src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png">
+                    </div>
+                    <div class="forecast-temp">
+                        <span class="max-temp">
+                            <strong>28°</strong>
+                        </span>
+                        <span class="mini-temp">16°</span>
+                    </div><div class="day-container">
+                        <div class="forecast-day">Sun</div>
+                        <div>
+                            <img class="forecast-icon" src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png">
+                        </div>
+                        <div class="forecast-temp">
+                            <span class="max-temp">
+                                <strong>21°</strong>
+                            </span>
+                            <span class="mini-temp">14°</span>
+                        </div><div class="day-container">
+                            <div class="forecast-day">Mon</div>
+                            <div>
+                                <img class="forecast-icon" src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png">
+                            </div>
+                            <div class="forecast-temp">
+                                <span class="max-temp">
+                                    <strong>27°</strong>
+                                </span>
+                                <span class="mini-temp">16°</span>
+                            </div>
+                            </div>
+    </main>
+    <footer>
+        This project was coded by
+         <a href=" " target= "_blank">Nigelnash</a>
+          and is open sourced on 
+          <a href=" " target="_blank" >Github</a>
+           and is hosted on 
+           <a href=" " target="_blank"> Netlify.</a> 
+    </footer>
+    <script src="src/index.js"> </script>
+</body>
+</html>
