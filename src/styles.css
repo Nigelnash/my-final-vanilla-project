@@ -1,6 +1,7 @@
 body {
     background: #f9f7fe;
     font-family: "Chakra Petch", sans-serif;
+    border-radius: 10%;
   }
   
   a {
@@ -59,7 +60,7 @@ body {
   }
   
   .current-city {
-    font-size: 38px;
+    font-size: 42px;
     font-weight: 900;
     margin: 0;
   }
